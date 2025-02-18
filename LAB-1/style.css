@@ -1,0 +1,39 @@
+p{
+    font-family: sans-serif;
+}
+li{
+    font-family: sans-serif;
+}
+#html{
+    width: 250px;
+}
+
+#css{
+    width: 178px;
+}
+
+#js{
+    width: 210px;
+}
+
+#az{
+    width: 200px;
+}
+
+#py{
+    width: 190px;
+}
+
+.img:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+body{
+    background-color: gray;
+}
+table, td {
+    border:1px solid black;
+}
+thead{
+    font-weight: bold;
+}
