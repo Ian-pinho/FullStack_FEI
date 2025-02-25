@@ -1,0 +1,95 @@
+p{
+    font-family: sans-serif;
+}
+li{
+    font-family: sans-serif;
+}
+#html{
+    width: 250px;
+}
+
+#css{
+    width: 178px;
+}
+
+#js{
+    width: 210px;
+}
+
+#az{
+    width: 200px;
+}
+
+#py{
+    width: 190px;
+}
+
+.img:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+body{
+    background-color: gray;
+}
+table, td {
+    border:1px solid black;
+}
+thead{
+    font-weight: bold;
+}
+.header{
+    border-style: solid;
+    height: 190px;
+    background-color:rgb(245, 218, 183) ;
+}
+#c{ 
+    width: 130px;
+    position: absolute;
+    left: 2%;
+    top: 4%;
+}
+#java{
+    width: 200px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+#txt{
+    position: absolute;
+    left: 43%;
+    top: 8%;
+    color: darkgreen;
+}
+.mini-header{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color:lightskyblue;
+}
+.links{
+    position: relative;
+    top: 15px;
+}
+#subtitulo{
+    text-align: center;
+}
+.paragrafo{
+    color:rgb(100, 31, 165);
+}
+#subtitulo2{
+    text-align: center;
+}
+.books{
+    display: flex;
+    justify-content: space-around;
+}
+#book1{
+    height: 250px;
+}
+#book2{
+    height: 250px;
+}
+#book3{
+    height: 250px;
+}
