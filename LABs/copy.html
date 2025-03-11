@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <div id="HOME" class="header">
         <img id="c" src="images/C++.png" alt="">
         <h1 id="txt">C++ & Java</h1>
         <img id="java" src="images/Java.webp" alt="">
     </div>
     <div class="mini-header">    
-        <a class="links">Home</a>
-        <a class="links">Livros</a>
-        <a class="links">Vídeos</a>
-        <a class="links">Contatos</a>
+        <a class="links" href="#HOME">HOME</a>
+        <a class="links" href="#subtitulo2">LIVROS</a>
+        <a class="links" href="#subtitulo3">VÍDEOS</a>
+        <a class="links" href="#subtitulo4">CONTATOS</a>
     </div>
-    <h2 id="subtitulo">Introdução</h2>
+    <h2 class="subtitulo">Introdução</h2>
     <div class="paragrafo">
         <p>C++ (em português: lê-se "cê mais mais", em inglês lê-se see plus plus) é uma linguagem de 
         programação compilada multi-paradigma (seu suporte inclui linguagem imperativa, orientada a 
@@ -32,11 +32,52 @@
         descende imediatamente. Java tem em comum com a linguagem C++ o fato de ser orientada a objetos e mantém
         com esta uma alto grau de semelhança.</p>
     </div>
-    <h2 id="subtitulo2">Livro</h2>
+    <h2 id ="subtitulo2" class="subtitulo">Livro</h2>
     <div class="books">
         <img id="book1" src="images/book1.jpg" alt="">
         <img id="book2" src="images/book2.jpg" alt="">
         <img id="book3" src="images/book3.jpg" alt="">
+    </div>
+    <br>
+    <br>
+    <h2 id="subtitulo3" class="subtitulo">Aprenda a programar com Java e C++ na FEI.</h2>
+    <div class="iframes">
+        <iframe src="https://www.youtube.com/embed/4MHAOPxcnsQ"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.648556785657!2d-46.581586585019195!3d-23.724241184602274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4158ef9c7c05%3A0x776b798985695f52!2sCentro%20Universit%C3%A1rio%20FEI%20-%20Campus%20S%C3%A3o%20Bernardo%20do%20Campo!5e0!3m2!1spt-BR!2sbr!4v1630280666216!5m2!1spt-BR!2sbr"></iframe>
+    </div>
+    <br>
+    <br>
+    <h2 id="subtitulo4" class="subtitulo">Contatos</h2>
+    <table>
+        <div>
+            <thead>
+                <td class="tableData">Nome</td>
+                <td class="tableData">email</td>
+            </thead>
+            <tr>
+                <td class="tableData">Prof. Dr. Fagner Pimentel</td>
+                <td class="tableData">fpimentel@fei.edu.br</td>
+            </tr>     
+            <tr>
+                <td class="tableData">Prof. Dr. Isaac Jesus da Silva</td>
+                <td class="tableData">isaacjesus@fei.edu.br</td>
+            </tr>
+        </div>     
+    </table>
+    <br>
+    <br>
+    <div id="flexbox">
+        <p>Sites para consulta:</p>
+        <ul>
+            <li>HTMl - <a style="color: brown;" href="https://w3schools.com/html/">https://w3schools.com/html/</a></li>
+            <li>CSS - <a style="color: brown;" href="https://w3schools.com/css/">https://w3schools.com/css/</a></li>
+            <li>JavaScript - <a style="color: brown;" href="https://w3schools.com/js/">https://w3schools.com/js/</a></li>
+        </ul>
+    </div>
+    <div class="header2">
+        <img style="width: 150px; height: 150px;" src="images/html.png" alt="">
+        <h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Desejamos um exelente semestre a todos.</h1>
+        <img style="width: 110px; height: 150px; padding-right: 20px;" src="images/css-logo.png" alt="">
     </div>
 </body>
 </html>
