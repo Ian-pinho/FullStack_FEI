@@ -1,0 +1,99 @@
+.frase{
+    display: flex;
+    flex-direction: row;
+    padding-left: 8%;
+}
+.frase2{
+    color: gray;
+}
+.espaco{
+    color: rgba(240, 248, 255, 0);
+}
+body{
+    background-color: aliceblue;
+}
+.subtitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 50.4%;
+    padding-left: 9.7%;
+}
+.imagens{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 50%;
+    padding-left: 8%;
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    padding-left: 8%;
+    padding-right: 51%;
+    justify-content: space-between;
+}
+.post1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.post2{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%; 
+}
+.post3{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+}
+.titulinho1{
+    color: gray;
+    font-size: xx-small;
+}
+.titulinho2{
+    color: white;
+    font-size: xx-small;
+}
+.textopost2{
+    color: white;
+}
+.post6{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    width: 250px;
+}
+.posts3{
+    display: flex;
+    flex-direction: row;
+    padding-left: 8%;
+    padding-right: 35%;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 25%;
+    padding-right: 25%;
+}

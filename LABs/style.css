@@ -31,7 +31,7 @@ li{
 body{
     background-color: gray;
 }
-table, td {
+.tableProjects, .tdProjects {
     border:1px solid black;
 }
 thead{
@@ -101,19 +101,17 @@ thead{
     margin-left: 150px;
     margin-right: 150px;
 }
-table{
+.tableCopy{
     border-color: red;
     border-style: dashed;
     border-width: 4px;
     justify-self: center;
 }
-td{
-    border-color: red;
-}
-thead{
+.theadCopy{
     color: red;
 }
-.tableData{
+#tableData{
+    border-color: red;
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
