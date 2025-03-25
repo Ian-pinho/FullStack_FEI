@@ -111,6 +111,7 @@ thead{
     color: red;
 }
 #tableData{
+    border-style: solid;
     border-color: red;
     text-align: center;
     padding-top: 8px;
