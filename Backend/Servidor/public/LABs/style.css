@@ -1,0 +1,136 @@
+p{
+    font-family: sans-serif;
+}
+li{
+    font-family: sans-serif;
+}
+#html{
+    width: 250px;
+}
+
+#css{
+    width: 178px;
+}
+
+#js{
+    width: 210px;
+}
+
+#az{
+    width: 200px;
+}
+
+#py{
+    width: 190px;
+}
+
+.img:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+body{
+    background-color: gray;
+}
+.tableProjects, .tdProjects {
+    border:1px solid black;
+}
+thead{
+    font-weight: bold;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 190px;
+    background-color:rgb(245, 218, 183) ;
+    border: 4px solid indigo;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#c{ 
+    width: 160px;
+}
+#java{
+    width: 200px;
+}
+#txt{
+    display: flex;
+    padding-top: 40px;
+    font-size: 280%;
+    color: darkgreen;
+}
+.mini-header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:lightskyblue;
+}
+.links{
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+}
+.subtitulo{
+    text-align: center;
+}
+.paragrafo{
+    color:rgb(100, 31, 165);
+}
+.books{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+#book1{
+    height: 250px;
+}
+#book2{
+    height: 250px;
+}
+#book3{
+    height: 250px;
+}
+.iframes{
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.tableCopy{
+    border-color: red;
+    border-style: dashed;
+    border-width: 4px;
+    justify-self: center;
+}
+.theadCopy{
+    color: red;
+}
+#tableData{
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#flexbox{
+    background-color: yellow;
+    justify-self: center;
+    margin: 20px;
+    width: 500px;
+    padding-bottom: 0.1px;
+}
+.header2{
+    background-color:rgb(245, 218, 183) ;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
