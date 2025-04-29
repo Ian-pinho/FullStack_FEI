@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <h2>Exemplos de GET</h2>
+    <form method="get" action="/inicio">
+        <input type="submit" value="Clique aqui para acessar">
+    </form>
+    <h2>Exemplos de POST</h2>
+    <form method="post" action="/inicio">
+        <input type="submit" value="Clique aqui para acessar">
+    </form>
+    <h2>Exemplo de cadastro de usuário usando GET</h2>
+    <form method="get" action="/cadastrar">
+        <p>Nome: <input type="text" name="nome"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>Senha: <input type="password" name="senha"></p>
+        <p>Nascimento: <input type="date" name="nascimento"></p>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <h2>Exemplo de cadastro de usuário usando POST</h2>
+    <form method="get" action="/cadastrar">
+        <p>Nome: <input type="text" name="nome"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>Senha: <input type="password" name="senha"></p>
+        <p>Nascimento: <input type="date" name="nascimento"></p>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <h2>Exemplo de for no ejs</h2>
+    <form action="for_ejs" method="get">
+        <p>Número de DIV's: <input type="number" name="num"></p>
+        <input type="submit" value="Clique para gerar DIV's!">
+    </form>
+</body>
+</html>
