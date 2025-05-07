@@ -37,40 +37,44 @@ app.get("/inicio", function(requisicao, resposta){
 app.post("/inicio", function(requisicao, resposta){
     resposta.redirect("Login.html")
 })
-app.get("/login", function(requisicao, resposta){
-    let nome = requisicao.query.nome;
-    let email = requisicao.query.email;
-    let senha = requisicao.query.senha;
-    let nascimento = requisicao.query.nascimento;
-    console.log(nome, email, senha, nascimento);
+// app.get("/login", function(requisicao, resposta){
+//     let nome = requisicao.query.nome;
+//     let email = requisicao.query.email;
+//     let senha = requisicao.query.senha;
+//     let nascimento = requisicao.query.nascimento;
+//     console.log(nome, email, senha, nascimento);
 
-    resposta.render("resposta.ejs", 
-        {mensagem: "Usuário cadastrado com sucesso!", usuario: nome, login: email})
-})
-nome = ""
-senha = ""
+//     resposta.render("resposta.ejs", 
+//         {mensagem: "Usuário cadastrado com sucesso!", usuario: nome, login: email})
+// })
+email2 = ""
+senha2 = ""
 app.post("/cadastra", function(requisicao, resposta){
     let nome = requisicao.body.nome;
     let email = requisicao.body.email;
     let senha = requisicao.body.senha;
     let nascimento = requisicao.body.nascimento;
     console.log(nome, email, senha, nascimento);
-
+    email2 = email
+    senha2 = senha
     resposta.redirect("Servidor login/Login.html")
     // resposta.render("resposta.ejs", 
     //     {mensagem: "Usuário cadastrado com sucesso!", usuario: nome, login: email})
 })
 
 app.post("/login", function(req, resp) {
-    let data = {db_nome: req.body.nome, db_email: req.body.email, db_senha: req.body.senha, db_nascimento: req.body.nascimento};
-    usuarios.insertOne(data, function (){
-      if (email != db_email) {
+    let db_email = req.body.email;
+    let db_senha = req.body.senha;
+    console.log(db_email)
+    console.log(email2)
+    console.log(db_senha)
+    console.log(senha2)
+    if (email2 != db_email || senha2 != db_senha) {
         resp.render('resposta.ejs', {resposta: "Erro ao cadastrar usuário!"})
-      }else {
+    }else {
         resp.render('resposta.ejs', {resposta: "Usuário cadastrado com sucesso!"})        
-        }
-        })
-    });
+    }
+})
 
 
 app.get("/for_ejs", function(requisicao, resposta){
