@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de carros</title>
+</head>
+<body>
+    <form action="/cad_carro" method="post">
+        <input type="submit" value="Criar Post de carro">
+    </form>
+    <br>
+    <br>
+    <br>
+    <div>
+        <% posts.forEach(function(post) { %>
+            <div class="post">
+                <p><strong><%= post.db_titulo %></strong></p>
+                <p><%= post.db_resumo %></p>
+                <p><%= post.db_conteudo %></p>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

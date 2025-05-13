@@ -20,6 +20,10 @@ var usuarios = dbo.collection("usuarios");
 var dboo = client.db("exemplo2_bd");
 var posts = dboo.collection("postss");
 
+var dbo = client.db("carro");
+var carros = dbo.collection("carros")
+var users = dbo.collection("users")
+
 app.use(express.static("public/"));
 app.use(bodyParser.urlencoded({extended: false }))
 app.use(bodyParser.json())
@@ -33,7 +37,9 @@ app.get("/", function(requisicao, resposta){
 app.get("/cadastra", function(requisicao, resposta){
     resposta.redirect("Servidor login/Cadastro.html")
 })
-
+app.get("/carros", function(requisicao, resposta){
+    resposta.redirect("Carros/index.html")
+})
 app.get("/inicio", function(requisicao, resposta){
     resposta.redirect("Login.html")
 })
@@ -44,6 +50,17 @@ app.post("/inicio", function(requisicao, resposta){
 app.post("/cadastra", function(requisicao, resposta){
     var data = {db_nome: requisicao.body.nome, db_email: requisicao.body.email, db_senha: requisicao.body.senha };
     usuarios.insertOne(data, function(err){
+        if (err) {
+            resposta.render("resposta.ejs", {resposta: "Erro ao cadastrar usuário!"})
+        }else {
+            resposta.render("resposta.ejs", {resposta: "Usuário cadastrado com sucesso!"})
+        }
+    })
+})
+
+app.post("/cadastraCarro", function(requisicao, resposta){
+    var data = {db_nome: requisicao.body.nome, db_email: requisicao.body.email, db_senha: requisicao.body.senha };
+    users.insertOne(data, function(err){
         if (err) {
             resposta.render("resposta.ejs", {resposta: "Erro ao cadastrar usuário!"})
         }else {
@@ -64,6 +81,22 @@ app.post("/login", function(req, resp) {
             resp.render('resposta.ejs', {resposta: "Erro ao logar no usuário!"})
         }else {
             resp.render('resposta.ejs', {resposta: "Usuário logado com sucesso!"})        
+        }
+    })
+})
+
+app.post("/loginCarro", function(req, resp) {
+    let email = req.body.email;
+    let senha = req.body.senha;
+    let data = {db_email: email, db_senha: senha};
+    users.find(data).toArray(function(err, itens){
+        if (itens.length == 0) {
+            resp.render("resposta.ejs", {resposta: "Usuário não encontrado!"})
+        }
+        else if (err) {
+            resp.render('resposta.ejs', {resposta: "Erro ao logar no usuário!"})
+        }else {
+            resp.render()        
         }
     })
 })
